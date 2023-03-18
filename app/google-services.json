@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "481274949690",
+    "project_id": "verdeando-3baf2",
+    "storage_bucket": "verdeando-3baf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481274949690:android:fa53dde04fd1face328503",
+        "android_client_info": {
+          "package_name": "com.company.verdeando"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481274949690-k5m0qt1r6n0csn0lnv91rdseu7vamuq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuk9iPru_vjFvVlMIxr1i5U6zM4QG88Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481274949690-k5m0qt1r6n0csn0lnv91rdseu7vamuq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481274949690:android:8b16fa34945a6341328503",
+        "android_client_info": {
+          "package_name": "com.example.appreciclar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481274949690-k5m0qt1r6n0csn0lnv91rdseu7vamuq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuk9iPru_vjFvVlMIxr1i5U6zM4QG88Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481274949690-k5m0qt1r6n0csn0lnv91rdseu7vamuq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

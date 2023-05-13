@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Inicio"
+        android:icon="@drawable/home_svgrepo_com"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/profile_svgrepo_com"
+        android:title="Perfil"/>
+
+    <item
+        android:id="@+id/ajustes"
+        android:icon="@drawable/settings_svgrepo_com"
+        android:title="Ajustes"/>
+
+
+
+</menu>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".misDatos">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MisDatos"
+            android:text="@string/MisDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"/>
+
+        <!--FOTO PERFIL-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImagenDato"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_perfil"/>
+        
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="30dp">
+
+            <!--uidDato-->
+
+            <TextView
+                android:id="@+id/uidDatoTXT"
+                android:text="@string/uidDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/uidDato"
+                android:text="@string/uidDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--NombreDato-->
+
+            <TextView
+                android:id="@+id/NombreDatoTXT"
+                android:text="@string/NombreDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/NombreDato"
+                    android:text="@string/NombreDato"
+                    android:textSize="18dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--ApeliidosDato-->
+
+            <TextView
+                android:id="@+id/ApellidosDatosTXT"
+                android:text="@string/ApellidosDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ApellidosDatos"
+                android:text="@string/ApellidosDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--CorreoDato-->
+
+            <TextView
+                android:id="@+id/CorreoDatoTXT"
+                android:text="@string/CorreoDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/CorreoDato"
+                android:text="@string/CorreoDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--ContraseñaDato-->
+
+            <TextView
+                android:id="@+id/ContraseñaDatoTXT"
+                android:text="@string/ContraseñaDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/ContraseñaDato"
+                android:text="@string/ContraseñaDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--EdadDato-->
+
+            <TextView
+                android:id="@+id/EdadDatoTXT"
+                android:text="@string/EdadDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/EdadDato"
+                android:text="@string/EdadDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--TelefonoDato-->
+
+            <TextView
+                android:id="@+id/TelefonoDatoTXT"
+                android:text="@string/TelefonoDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/TelefonoDato"
+                android:text="@string/TelefonoDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!--DireccionDato-->
+
+            <TextView
+                android:id="@+id/DireccionDatoTXT"
+                android:text="@string/DireccionDatoTXT"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/DireccionDato"
+                android:text="@string/DireccionDato"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <!--Boton Datos-->
+        <Button
+            android:id="@+id/ActualizarDatos"
+            android:text="@string/ActualizarDatos"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+        <!--Boton Contraseña-->
+        <Button
+            android:id="@+id/ActualizarPass"
+            android:text="@string/ActualizarPass"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

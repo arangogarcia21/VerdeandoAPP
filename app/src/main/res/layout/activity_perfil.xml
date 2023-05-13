@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_container"
+    android:background="@color/verdeando"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+
+
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verdeando"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <!--Portada-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/portada"
+                android:scaleType="center">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="80dp">
+
+                <!--Foto de perfil-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/foto_perfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="3dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="#7CB342">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <!--Más Datos-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!--UID-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/iudTxt"
+                            android:textColor="@color/black"
+                            android:text="@string/uidTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/uidPerfil"
+                            android:textColor="@color/black"
+                            android:text="@string/uidPerfil"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!--CORREO-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/correoTxt"
+                            android:textColor="@color/black"
+                            android:text="@string/correoTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/correoPerfil"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/correoPerfil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!--Nombres-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nombresTxt"
+                            android:textColor="@color/black"
+                            android:text="@string/nombresTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/nombresPerfil"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/nombresPerfil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Menú de opciones-->
+
+                <!--Opcion 1-2-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+
+                    <!--Mis Datos-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/datos"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/misDatosOpcion"
+                            android:text="@string/misDatosOpcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/crear"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/crearPublicacion"
+                            android:text="@string/crearPublicacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Opcion 3-4-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <!--Publicaciones-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/publicaciones"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/publicaciones"
+                            android:text="@string/publicaciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <!--Usuarios-->
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/usuarios"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/sitios"
+                            android:text="@string/sitios"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!--Opcion 5-6-->
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/chats"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/chatOpcion"
+                            android:text="@string/chatOpcion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/salir_app"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/cSesion"
+                            android:text="@string/cSesion"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

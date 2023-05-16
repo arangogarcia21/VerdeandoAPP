@@ -39,7 +39,9 @@
         <!--CORREO-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
             
             <EditText
                 android:id="@+id/ingresarCorreo"
@@ -56,7 +58,9 @@
         <!--CONTRASEÑA-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
             <EditText
                 android:id="@+id/ingresarContra"
@@ -71,7 +75,9 @@
         <!--NOMBRES-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
             <EditText
                 android:id="@+id/ingresarNombre"
@@ -86,7 +92,9 @@
         <!--APELLIDOS-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
             <EditText
                 android:id="@+id/ingresarApellidos"
@@ -101,7 +109,9 @@
         <!--EDAD-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
             <EditText
                 android:id="@+id/edad"
@@ -116,7 +126,9 @@
         <!--CELULAR-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
             <EditText
                 android:id="@+id/nCelular"
@@ -131,13 +143,16 @@
         <!--DIRECCION-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            >
 
              <EditText
                  android:id="@+id/direccion"
                 android:hint="@string/direccion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="45dp"
+                 >
 
             </EditText>
 
@@ -151,8 +166,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/rectangle_3"
-            android:backgroundTint="@color/lavender"
-
             android:layout_gravity="center"/>
 
         <TextView
@@ -161,17 +174,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="¿Ya tienes cuenta?"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/iniciarSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:background="#FFFFFF"
             android:scrollbars="horizontal"
             android:text="INICIAR SESIÓN"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle_3"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

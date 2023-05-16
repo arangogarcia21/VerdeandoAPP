@@ -47,14 +47,14 @@
                 android:id="@+id/ingresarEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/ingresarEmail"
-                android:background="@drawable/custom_edittext"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:background="@drawable/custom_edittext"
                 android:gravity="start|center_vertical"
+                android:hint="@string/ingresarEmail"
+                android:padding="16dp"
                 android:textColor="@color/lavender"
 
-               />
+                />
 
 
 

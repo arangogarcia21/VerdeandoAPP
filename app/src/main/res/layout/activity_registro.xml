@@ -42,14 +42,14 @@
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
             >
-            
+
             <EditText
                 android:id="@+id/ingresarCorreo"
-                android:hint="@string/ingresarCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/ingresarCorreo"
 
-                >
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -64,9 +64,10 @@
 
             <EditText
                 android:id="@+id/ingresarContra"
-                android:hint="@string/ingresarContraseña"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/ingresarContraseña"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -81,9 +82,10 @@
 
             <EditText
                 android:id="@+id/ingresarNombre"
-                android:hint="@string/ingresarNombre"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/ingresarNombre"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -98,9 +100,10 @@
 
             <EditText
                 android:id="@+id/ingresarApellidos"
-                android:hint="@string/ingresarApellidos"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/ingresarApellidos"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -115,9 +118,10 @@
 
             <EditText
                 android:id="@+id/edad"
-                android:hint="@string/edad"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/edad"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -132,9 +136,10 @@
 
             <EditText
                 android:id="@+id/nCelular"
-                android:hint="@string/nCelular"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:hint="@string/nCelular"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
@@ -147,12 +152,12 @@
             android:background="@drawable/custom_edittext"
             >
 
-             <EditText
-                 android:id="@+id/direccion"
-                android:hint="@string/direccion"
+            <EditText
+                android:id="@+id/direccion"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                 >
+                android:hint="@string/direccion"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 

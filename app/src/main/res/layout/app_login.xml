@@ -54,7 +54,7 @@
                 android:padding="16dp"
                 android:textColor="@color/lavender"
 
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
 
@@ -72,13 +72,13 @@
                 android:id="@+id/ingresarContra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/ingresarContra"
-                android:background="@drawable/custom_edittext"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:background="@drawable/custom_edittext"
                 android:gravity="start|center_vertical"
+                android:hint="@string/ingresarContra"
+                android:padding="16dp"
                 android:textColor="@color/lavender"
-                >
+                tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 

@@ -15,7 +15,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/verdeando"
+
        >
 
         <RelativeLayout
@@ -26,28 +26,28 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:src="@drawable/portada"
-                android:scaleType="center">
+                android:scaleType="center"
+                android:src="@drawable/portada">
 
             </androidx.appcompat.widget.AppCompatImageView>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
                 android:orientation="vertical"
-                android:padding="10dp"
-                android:layout_marginTop="80dp">
+                android:padding="10dp">
 
                 <!--Foto de perfil-->
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/foto_perfil"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:padding="3dp"
-                    android:layout_marginTop="160dp"
                     android:layout_marginStart="20dp"
-                    android:scaleType="centerCrop"
-                    android:background="#7CB342">
+                    android:layout_marginTop="160dp"
+                    android:background="#7CB342"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop">
 
                 </androidx.appcompat.widget.AppCompatImageView>
 
@@ -56,8 +56,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp"
-                    >
+                    android:padding="10dp">
 
 
                     <androidx.appcompat.widget.LinearLayoutCompat
@@ -67,20 +66,20 @@
 
                         <TextView
                             android:id="@+id/iudTxt"
-                            android:textColor="@color/black"
-                            android:text="@string/uidTxt"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:text="@string/uidTxt"
+                            android:textColor="@color/black">
 
                         </TextView>
 
                         <TextView
                             android:id="@+id/uidPerfil"
-                            android:textColor="@color/black"
-                            android:text="@string/uidPerfil"
-                            android:layout_marginStart="5dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/uidPerfil"
+                            android:textColor="@color/black">
 
                         </TextView>
 
@@ -94,20 +93,20 @@
 
                         <TextView
                             android:id="@+id/correoTxt"
-                            android:textColor="@color/black"
-                            android:text="@string/correoTxt"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:text="@string/correoTxt"
+                            android:textColor="@color/black">
 
                         </TextView>
 
                         <TextView
                             android:id="@+id/correoPerfil"
-                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:text="@string/correoPerfil"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:textColor="@color/black">
 
                         </TextView>
 
@@ -121,20 +120,20 @@
 
                         <TextView
                             android:id="@+id/nombresTxt"
-                            android:textColor="@color/black"
-                            android:text="@string/nombresTxt"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:text="@string/nombresTxt"
+                            android:textColor="@color/black">
 
                         </TextView>
 
                         <TextView
                             android:id="@+id/nombresPerfil"
-                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:text="@string/nombresPerfil"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:textColor="@color/black">
 
                         </TextView>
 
@@ -148,48 +147,50 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
                     android:weightSum="2">
 
                     <!--Mis Datos-->
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/datos"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/datos" />
 
                         <Button
                             android:id="@+id/misDatosOpcion"
-                            android:text="@string/misDatosOpcion"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/misDatosOpcion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/crear"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/crear" />
 
                         <Button
                             android:id="@+id/crearPublicacion"
-                            android:text="@string/crearPublicacion"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/crearPublicacion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -199,28 +200,29 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
                     android:weightSum="2">
 
                     <!--Publicaciones-->
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/publicaciones"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/publicaciones" />
 
                         <Button
                             android:id="@+id/publicaciones"
-                            android:text="@string/publicaciones"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/publicaciones" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -228,21 +230,22 @@
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/usuarios"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/usuarios" />
 
                         <Button
                             android:id="@+id/sitios"
-                            android:text="@string/sitios"
-                            android:layout_marginStart="5dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/sitios" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -260,41 +263,43 @@
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/chats"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/chats" />
 
                         <Button
                             android:id="@+id/chatOpcion"
-                            android:text="@string/chatOpcion"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/chatOpcion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
                     <androidx.appcompat.widget.LinearLayoutCompat
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/salir_app"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/salir_app" />
 
                         <Button
                             android:id="@+id/cSesion"
-                            android:text="@string/cSesion"
-                            android:layout_marginStart="5dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/rectangle_3"
+                            android:text="@string/cSesion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 

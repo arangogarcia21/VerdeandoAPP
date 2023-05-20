@@ -40,7 +40,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:paddingTop="10dp"
             >
 
@@ -83,12 +82,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
+
             android:paddingTop="10dp"
             >
 
             <EditText
                 android:id="@+id/ingresarNombre"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ingresarNombre"
@@ -102,12 +103,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
+
             android:paddingTop="10dp"
             >
 
             <EditText
                 android:id="@+id/ingresarApellidos"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ingresarApellidos"
@@ -121,12 +124,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
             android:paddingTop="10dp"
             >
 
             <EditText
                 android:id="@+id/edad"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/edad"
@@ -140,12 +144,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
             android:paddingTop="10dp"
             >
 
             <EditText
                 android:id="@+id/nCelular"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/nCelular"
@@ -159,12 +164,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
             android:paddingTop="10dp"
             >
 
             <EditText
                 android:id="@+id/direccion"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:hint="@string/direccion"

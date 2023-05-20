@@ -27,7 +27,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:scaleType="center"
-                android:src="@drawable/portada">
+                android:src="@drawable/fondo2"
+
+                >
 
             </androidx.appcompat.widget.AppCompatImageView>
 
@@ -44,8 +46,9 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="20dp"
+                    android:background="@drawable/custom_edittext"
                     android:layout_marginTop="160dp"
-                    android:background="#7CB342"
+
                     android:padding="3dp"
                     android:scaleType="centerCrop">
 

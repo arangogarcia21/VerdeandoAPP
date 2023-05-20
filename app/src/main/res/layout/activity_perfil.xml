@@ -276,7 +276,7 @@
                             android:src="@drawable/juegos" />
 
                         <Button
-                            android:id="@+id/chatOpcion"
+                            android:id="@+id/Juego"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"

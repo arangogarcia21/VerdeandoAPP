@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppReciclar"
         tools:targetApi="31">
         <activity
+            android:name=".CrearPost"
+            android:exported="false" />
+        <activity
             android:name=".MisDatos"
             android:exported="false" />
         <activity

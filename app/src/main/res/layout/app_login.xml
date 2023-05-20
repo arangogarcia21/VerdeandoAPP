@@ -108,6 +108,18 @@
 
         </Button>
 
+        <Button
+        android:id="@+id/btnReset"
+        android:text="@string/btnReset"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_3"
+        android:backgroundTint="@color/lavender"
+        >
+
+    </Button>
+
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

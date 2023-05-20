@@ -36,7 +36,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class Login extends AppCompatActivity {
-    Button btnRegistrar, btnLogin;
+    Button btnRegistrar, btnLogin, btnReset;
     EditText ingresarEmail, ingresarContraseña;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
@@ -53,7 +53,15 @@ public class Login extends AppCompatActivity {
         btnRegistrar = (Button) findViewById(R.id.btnRegistrar);
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
+        btnReset = (Button) findViewById(R.id.btnReset);
         dialog = new Dialog(Login.this);
+
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, ResetActivity.class));
+            }
+        });
 
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {

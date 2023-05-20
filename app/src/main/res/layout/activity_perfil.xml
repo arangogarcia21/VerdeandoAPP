@@ -46,9 +46,8 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="20dp"
-                    android:background="@drawable/custom_edittext"
                     android:layout_marginTop="160dp"
-
+                    android:background="@drawable/fotoPerfil"
                     android:padding="3dp"
                     android:scaleType="centerCrop">
 
@@ -192,6 +191,7 @@
                             android:id="@+id/crearPublicacion"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
                             android:background="@drawable/rectangle_3"
                             android:text="@string/crearPublicacion" />
 
@@ -218,7 +218,7 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/publicaciones" />
+                            android:src="@drawable/publiIcon" />
 
                         <Button
                             android:id="@+id/publicaciones"
@@ -240,7 +240,7 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/usuarios" />
+                            android:src="@drawable/mapaIcono" />
 
                         <Button
                             android:id="@+id/sitios"
@@ -273,14 +273,14 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/chats" />
+                            android:src="@drawable/juegos" />
 
                         <Button
                             android:id="@+id/chatOpcion"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"
-                            android:text="@string/chatOpcion" />
+                            android:text="JUEGOS" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -294,7 +294,7 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/salir_app" />
+                            android:src="@drawable/salida" />
 
                         <Button
                             android:id="@+id/cSesion"

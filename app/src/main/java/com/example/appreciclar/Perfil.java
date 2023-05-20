@@ -32,7 +32,7 @@ public class Perfil extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference BASE_DE_DATOS;
 
-    Button misDatosOpcion, crearPublicacion, publicaciones, usuarios, chatOpcion;
+    Button misDatosOpcion, crearPublicacion, publicaciones, chatOpcion;
     ImageView foto_perfil;
     TextView uidPerfil, correoPerfil, nombresPerfil;
 
@@ -56,7 +56,6 @@ public class Perfil extends AppCompatActivity {
         misDatosOpcion = findViewById(R.id.misDatosOpcion);
         crearPublicacion = findViewById(R.id.crearPublicacion);
         publicaciones = findViewById(R.id.publicaciones);
-        //usuarios = findViewById(R.id.usuarios);
         chatOpcion = findViewById(R.id.chatOpcion);
 
         CerrarSesion = findViewById(R.id.cSesion);

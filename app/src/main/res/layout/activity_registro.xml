@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/inicio"
-    tools:context=".Activity_registro">
+    tools:context=".activity_registro">
 
 
 
@@ -41,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText
@@ -60,6 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
+            app:passwordToggleEnabled="true"
             >
 
             <EditText
@@ -67,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ingresarContraseña"
+                android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -78,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText
@@ -96,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText
@@ -114,6 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText
@@ -132,6 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText
@@ -150,6 +158,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_edittext"
+            android:paddingTop="10dp"
             >
 
             <EditText

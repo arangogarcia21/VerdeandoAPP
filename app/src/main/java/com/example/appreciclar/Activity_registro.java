@@ -22,12 +22,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-public class Activity_registro extends AppCompatActivity  {
+public class activity_registro extends AppCompatActivity  {
     EditText ingresarCorreo, ingresar_Contraseña, ingresarNombre, ingresarApellidos, edad, nCelular, direccion;
 
     Button btnRegistrarse, iniciarSesion;
     FirebaseAuth mAuth;
-    DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class Activity_registro extends AppCompatActivity  {
         iniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Activity_registro.this, Login.class));
+                startActivity(new Intent(activity_registro.this, Login.class));
             }
         });
 
@@ -110,16 +110,16 @@ public class Activity_registro extends AppCompatActivity  {
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference reference = database.getReference("Usuarios");
                     reference.child(uid).setValue(DatosUsuario);
-                    Toast.makeText(Activity_registro.this, "Se registró exitosamente", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Activity_registro.this, Perfil.class));
+                    Toast.makeText(activity_registro.this, "Se registró exitosamente", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(activity_registro.this, Perfil.class));
                 } else {
-                    Toast.makeText(Activity_registro.this, "Algo ha salido mal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity_registro.this, "Algo ha salido mal", Toast.LENGTH_SHORT).show();
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Activity_registro.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity_registro.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

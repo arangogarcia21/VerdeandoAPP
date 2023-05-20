@@ -218,7 +218,7 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/publiIcon" />
+                            android:src="@drawable/publico" />
 
                         <Button
                             android:id="@+id/publicaciones"
@@ -240,7 +240,7 @@
                             android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/mapaIcono" />
+                            android:src="@drawable/mapass" />
 
                         <Button
                             android:id="@+id/sitios"

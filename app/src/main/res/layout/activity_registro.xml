@@ -40,16 +40,17 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
+
             android:paddingTop="10dp"
             >
 
             <EditText
+                android:background="@drawable/custom_edittext"
                 android:id="@+id/ingresarCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ingresarCorreo"
-
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -60,16 +61,17 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_edittext"
-            android:paddingTop="10dp"
             app:passwordToggleEnabled="true"
+            android:layout_marginTop="5dp"
             >
 
             <EditText
+                android:background="@drawable/custom_edittext"
                 android:id="@+id/ingresarContra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ingresarContraseña"
+                android:padding="15dp"
                 android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck">
 

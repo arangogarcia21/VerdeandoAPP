@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/baseline_menu_24.xml" value="0.24" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/baseline_settings_24.xml" value="0.24" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/custom_edittext.xml" value="0.24" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/home_svgrepo_com.xml" value="0.24" />
+        <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24" />
+        <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/ic_menu_camera.xml" value="0.24" />
+        <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/settings_svgrepo_com.xml" value="0.24" />
+        <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/drawable/side_nav_bar.xml" value="0.24" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/layout/activity_crear_post.xml" value="0.358695652173913" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/layout/activity_juegos.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/CESDE/AndroidStudioProjects/VerdeandoAPP/app/src/main/res/layout/activity_mis_datoss.xml" value="0.36666666666666664" />

@@ -56,7 +56,7 @@
     <string name="Login">INGRESAR</string>
     <string name="btnRegistrar">REGISTRARSE</string>
     <string name="btnGoogle">INICIAR SESIÓN CON GOOGLE</string>
-    <string name="btnReset">CAMBIAR CONTRASEÑA</string>
+    <string name="btnReset">CAMBIAR CONTRASEÑAA</string>
 
     <!--Perfil-->
     <string name="uidTxt">Uid: </string>

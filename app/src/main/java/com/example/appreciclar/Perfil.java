@@ -32,7 +32,7 @@ public class Perfil extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference BASE_DE_DATOS;
 
-    Button misDatosOpcion, crearPublicacion, publicaciones, juegos;
+    Button misDatosOpcion, crearPublicacion, publicaciones, usuarios, chatOpcion;
     ImageView foto_perfil;
     TextView uidPerfil, correoPerfil, nombresPerfil;
 
@@ -56,30 +56,10 @@ public class Perfil extends AppCompatActivity {
         misDatosOpcion = findViewById(R.id.misDatosOpcion);
         crearPublicacion = findViewById(R.id.crearPublicacion);
         publicaciones = findViewById(R.id.publicaciones);
-        juegos = findViewById(R.id.Juego);
+        //usuarios = findViewById(R.id.usuarios);
+        chatOpcion = findViewById(R.id.chatOpcion);
+
         CerrarSesion = findViewById(R.id.cSesion);
-
-
-        crearPublicacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Perfil.this, CrearPost.class));
-            }
-        });
-
-        publicaciones.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Perfil.this, Publicaciones.class));
-            }
-        });
-
-        juegos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Perfil.this, Juegos.class));
-            }
-        });
 
 
         misDatosOpcion.setOnClickListener(new View.OnClickListener() {

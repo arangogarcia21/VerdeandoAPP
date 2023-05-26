@@ -78,7 +78,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Save"
+                android:text="Publicar"
                 android:id="@+id/guardarPost"
                 android:textSize="18sp"
                 android:background="@drawable/rectangle_3"

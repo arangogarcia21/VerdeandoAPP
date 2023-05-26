@@ -29,4 +29,10 @@ public class DataClass {
         this.dataCalif = dataCalif;
         this.dataImage = dataImage;
     }
+    public DataClass(){
+
+    }
+
+    public void setKey(String key) {
+    }
 }

@@ -57,7 +57,7 @@ public class Perfil extends AppCompatActivity {
         crearPublicacion = findViewById(R.id.crearPublicacion);
         publicaciones = findViewById(R.id.publicaciones);
         //usuarios = findViewById(R.id.usuarios);
-        chatOpcion = findViewById(R.id.chatOpcion);
+
 
         CerrarSesion = findViewById(R.id.cSesion);
 

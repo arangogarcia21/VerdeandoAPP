@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/inicio"
     tools:context=".misDatos">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -263,8 +264,11 @@
         <Button
             android:id="@+id/ActualizarDatos"
             android:text="@string/ActualizarDatos"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_3"
+            android:backgroundTint="@color/lavender"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"/>
 
         <!--Boton Contraseña-->
@@ -272,7 +276,10 @@
             android:id="@+id/ActualizarPass"
             android:text="@string/ActualizarPass"
             android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
+            android:background="@drawable/rectangle_3"
+            android:backgroundTint="@color/lavender"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"/>
 
 

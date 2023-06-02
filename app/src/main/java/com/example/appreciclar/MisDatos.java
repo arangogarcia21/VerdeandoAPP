@@ -36,6 +36,8 @@ public class MisDatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_datoss);       
 
+
+
         ImagenDato = findViewById(R.id.ImagenDato);
         uidDato = findViewById(R.id.uidDato);
         NombreDato = findViewById(R.id.NombreDato);

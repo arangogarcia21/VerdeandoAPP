@@ -47,7 +47,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="160dp"
-                    android:background="@drawable/fotoPerfil"
+                    android:background="@drawable/img_perfil"
                     android:padding="3dp"
                     android:scaleType="centerCrop">
 

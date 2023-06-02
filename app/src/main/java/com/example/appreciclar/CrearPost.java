@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -22,6 +23,7 @@ public class CrearPost extends AppCompatActivity {
     ImageView subir_img;
     Button guardarPost;
     EditText nombrePost, descPost, califPost;
+    TextView nombrePerfil;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -35,6 +37,7 @@ public class CrearPost extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_post);
+        setContentView(R.layout.activity_perfil);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -46,6 +49,7 @@ public class CrearPost extends AppCompatActivity {
         nombrePost = findViewById(R.id.NombrePost);
         descPost = findViewById(R.id.DescPost);
         califPost = findViewById(R.id.CalifPost);
+        nombrePerfil = findViewById(R.id.nombresPerfil);
 
         guardarPost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,11 +57,13 @@ public class CrearPost extends AppCompatActivity {
                 String getTitulo = nombrePost.getText().toString();
                 String getDesc = descPost.getText().toString();
                 String getCalif = califPost.getText().toString();
+                String getNomPerfil = nombrePerfil.getText().toString();
 
                 HashMap<String,Object> hasMap = new HashMap<>();
                 hasMap.put("Titulo",getTitulo);
                 hasMap.put("Descripcion",getDesc);
                 hasMap.put("Calificacion", getCalif);
+                hasMap.put("Creador", getNomPerfil);
 
                 databaseReference.child("Publicaciones")
                         .child(getTitulo)

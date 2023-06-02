@@ -29,10 +29,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
                 android:text="Crear Post"
-                android:textSize="30sp"
                 android:textAlignment="center"
-                android:textColor="@color/verdeando"/>
+                android:textColor="@color/verdeando"
+                android:textSize="30sp" />
 
             <ImageView
                 android:layout_width="match_parent"

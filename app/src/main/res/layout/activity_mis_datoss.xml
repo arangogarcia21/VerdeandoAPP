@@ -15,12 +15,14 @@
 
         <TextView
             android:id="@+id/MisDatos"
-            android:text="@string/MisDatos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textSize="25dp"/>
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/MisDatos"
+            android:textColor="@color/verdeando"
+            android:textSize="25dp" />
 
         <!--FOTO PERFIL-->
         <androidx.appcompat.widget.AppCompatImageView
@@ -43,21 +45,25 @@
 
             <TextView
                 android:id="@+id/uidDatoTXT"
-                android:text="@string/uidDatoTXT"
-                android:textSize="18dp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="@string/uidDatoTXT"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
             <TextView
                 android:id="@+id/uidDato"
-                android:text="@string/uidDato"
-                android:textSize="18dp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="@string/uidDato"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -71,21 +77,24 @@
 
             <TextView
                 android:id="@+id/NombreDatoTXT"
-                android:text="@string/NombreDatoTXT"
-                android:textSize="18dp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/black"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="@string/NombreDatoTXT"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
-                <TextView
-                    android:id="@+id/NombreDato"
-                    android:text="@string/NombreDato"
-                    android:textSize="18dp"
-                    android:layout_marginTop="3dp"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/NombreDato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
+                android:text="@string/NombreDato"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -102,6 +111,7 @@
                 android:text="@string/ApellidosDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -111,6 +121,8 @@
                 android:text="@string/ApellidosDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -130,6 +142,7 @@
                 android:text="@string/CorreoDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -139,7 +152,9 @@
                 android:text="@string/CorreoDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/bebas_neue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -158,6 +173,7 @@
                 android:text="@string/ContraseñaDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -167,6 +183,8 @@
                 android:text="@string/ContraseñaDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -186,6 +204,7 @@
                 android:text="@string/EdadDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -195,7 +214,9 @@
                 android:text="@string/EdadDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/bebas_neue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -214,6 +235,7 @@
                 android:text="@string/TelefonoDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -223,6 +245,8 @@
                 android:text="@string/TelefonoDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -242,6 +266,7 @@
                 android:text="@string/DireccionDatoTXT"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -251,6 +276,8 @@
                 android:text="@string/DireccionDato"
                 android:textSize="18dp"
                 android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bebas_neue"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -263,15 +290,23 @@
         <Button
             android:id="@+id/ActualizarDatos"
             android:text="@string/ActualizarDatos"
+            android:background="@drawable/rectangle_3"
+            android:backgroundTint="@color/lavender"
             android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
             android:layout_height="wrap_content"/>
 
         <!--Boton Contraseña-->
         <Button
             android:id="@+id/ActualizarPass"
             android:text="@string/ActualizarPass"
-            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_3"
+            android:backgroundTint="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

@@ -17,12 +17,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
             android:gravity="center"
             android:text="@string/app_name"
             android:textSize="20sp"
-            android:textStyle="bold"
 
-            >
+            android:textStyle="bold">
 
         </TextView>
 
@@ -49,11 +49,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:gravity="start|center_vertical"
                 android:hint="@string/ingresarEmail"
                 android:padding="16dp"
-                android:textColor="@color/black"
 
+                android:textColor="@color/black"
                 tools:ignore="SpeakableTextPresentCheck" />
 
 
@@ -67,58 +68,59 @@
             app:passwordToggleEnabled="true">
 
             <EditText
-                android:importantForAutofill="no"
                 android:id="@+id/ingresarContra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:gravity="start|center_vertical"
                 android:hint="@string/ingresarContra"
-                android:padding="16dp"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
+                android:padding="16dp"
                 android:textColor="@color/black"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
 
         </com.google.android.material.textfield.TextInputLayout>
-        
+
         <Button
             android:id="@+id/Login"
-            android:text="@string/Login"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle_3"
-            android:backgroundTint="@color/lavender"
-            >
+
+            android:fontFamily="@font/bebas_neue"
+            android:text="@string/Login">
 
         </Button>
 
         <Button
             android:id="@+id/btnRegistrar"
-            android:text="@string/btnRegistrar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/rectangle_3"
             android:backgroundTint="@color/lavender"
-            >
+            android:fontFamily="@font/bebas_neue"
+            android:text="@string/btnRegistrar">
 
         </Button>
 
         <Button
-        android:id="@+id/btnReset"
-        android:text="@string/btnReset"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/rectangle_3"
-        android:backgroundTint="@color/lavender"
-        >
+            android:id="@+id/btnReset"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_3"
+            android:backgroundTint="@color/lavender"
+            android:fontFamily="@font/bebas_neue"
+            android:text="@string/btnReset">
 
-    </Button>
+        </Button>
 
 
 

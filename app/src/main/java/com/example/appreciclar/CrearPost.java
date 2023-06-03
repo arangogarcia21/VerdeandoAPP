@@ -1,8 +1,6 @@
 package com.example.appreciclar;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +9,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,6 +34,7 @@ public class CrearPost extends AppCompatActivity {
         return false;
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +81,7 @@ public class CrearPost extends AppCompatActivity {
                                 Toast.makeText(CrearPost.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
-            startActivity(new Intent(CrearPost.this, Publicaciones.class));
+                startActivity(new Intent(CrearPost.this, Publicaciones.class));
             }
         });
 

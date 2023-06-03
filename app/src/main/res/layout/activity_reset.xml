@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verdeando"
+    android:background="@drawable/inicio"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".ResetActivity">
@@ -12,14 +12,19 @@
     <EditText
         android:id="@+id/resetContraseña"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_height="50dp"
+
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="@font/bebas_neue"
         android:hint="Correo electrónico" />
 
     <Button
         android:id="@+id/ejeCambio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/bebas_neue"
         android:text="Restablecer contraseña" />
 
 </LinearLayout>

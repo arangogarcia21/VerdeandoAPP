@@ -18,12 +18,13 @@
 
         <!--TITULO-->
         <TextView
-            android:text="@string/Registro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="@string/Registro"
             android:textSize="16sp"
-            android:textStyle="normal|bold|italic"
-            android:layout_gravity="center"/>
+            android:textStyle="normal|bold|italic" />
 
         <!--LOGO-->
         <androidx.appcompat.widget.AppCompatImageView
@@ -44,10 +45,11 @@
             >
 
             <EditText
-                android:background="@drawable/custom_edittext"
                 android:id="@+id/ingresarCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/ingresarCorreo"
                 android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
@@ -65,13 +67,14 @@
             >
 
             <EditText
-                android:background="@drawable/custom_edittext"
                 android:id="@+id/ingresarContra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/ingresarContraseña"
-                android:padding="15dp"
                 android:inputType="textPassword"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -88,11 +91,12 @@
 
             <EditText
                 android:id="@+id/ingresarNombre"
-                android:background="@drawable/custom_edittext"
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/ingresarNombre"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -109,11 +113,12 @@
 
             <EditText
                 android:id="@+id/ingresarApellidos"
-                android:background="@drawable/custom_edittext"
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/ingresarApellidos"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -129,11 +134,12 @@
 
             <EditText
                 android:id="@+id/edad"
-                android:background="@drawable/custom_edittext"
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/edad"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -149,11 +155,12 @@
 
             <EditText
                 android:id="@+id/nCelular"
-                android:background="@drawable/custom_edittext"
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/nCelular"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -169,11 +176,12 @@
 
             <EditText
                 android:id="@+id/direccion"
-                android:background="@drawable/custom_edittext"
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="@font/bebas_neue"
                 android:hint="@string/direccion"
+                android:padding="15dp"
                 tools:ignore="SpeakableTextPresentCheck">
 
             </EditText>
@@ -183,35 +191,36 @@
 
         <Button
             android:id="@+id/btnRegistrarse"
-            android:text="@string/btnRegistrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textColor="@color/white"
             android:background="@drawable/rectangle_3"
-            android:layout_gravity="center"/>
+            android:fontFamily="@font/bebas_neue"
+            android:text="@string/btnRegistrarse"
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="¿Ya tienes cuenta?"
             android:layout_gravity="center"
-            android:textColor="@color/white"
-            />
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bebas_neue"
+            android:text="¿Ya tienes cuenta?"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/iniciarSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="12dp"
+            android:background="@drawable/rectangle_3"
+            android:fontFamily="@font/bebas_neue"
             android:scrollbars="horizontal"
             android:text="INICIAR SESIÓN"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:background="@drawable/rectangle_3"
-            />
+            android:textColor="@color/white" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -25,7 +25,7 @@
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
             android:padding="20dp"
-            android:background="@drawable/lavender_border">
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -47,8 +47,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/NombrePost"
-                android:background="@drawable/lavender_border"
+                android:background="@color/lavender"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/bebas_neue"
                 android:padding="16dp"
                 android:hint="Nombre lugar"
                 android:gravity="start|center_vertical"
@@ -58,7 +59,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:id="@+id/DescPost"
-                android:background="@drawable/lavender_border"
+                android:fontFamily="@font/bebas_neue"
+                android:background="@color/lavender"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:hint="Ingrese descripcion"
@@ -69,7 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/CalifPost"
-                android:background="@drawable/lavender_border"
+                android:fontFamily="@font/bebas_neue"
+                android:background="@color/lavender"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
                 android:hint="Ingrese calificacion"
@@ -81,6 +84,7 @@
                 android:layout_height="60dp"
                 android:text="Publicar"
                 android:id="@+id/guardarPost"
+                android:fontFamily="@font/bebas_neue"
                 android:textSize="18sp"
                 android:background="@drawable/rectangle_3"
                 android:layout_marginTop="20dp"

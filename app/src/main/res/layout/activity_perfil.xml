@@ -11,8 +11,7 @@
 
 
 
-    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -70,6 +69,7 @@
                             android:id="@+id/iudTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/uidTxt"
                             android:textColor="@color/black">
 
@@ -79,6 +79,7 @@
                             android:id="@+id/uidPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
                             android:text="@string/uidPerfil"
                             android:textColor="@color/black">
@@ -97,6 +98,7 @@
                             android:id="@+id/correoTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/correoTxt"
                             android:textColor="@color/black">
 
@@ -106,6 +108,7 @@
                             android:id="@+id/correoPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
                             android:text="@string/correoPerfil"
                             android:textColor="@color/black">
@@ -124,6 +127,7 @@
                             android:id="@+id/nombresTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/nombresTxt"
                             android:textColor="@color/black">
 
@@ -133,6 +137,7 @@
                             android:id="@+id/nombresPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
                             android:text="@string/nombresPerfil"
                             android:textColor="@color/black">
@@ -171,6 +176,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/misDatosOpcion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -193,6 +199,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/crearPublicacion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -225,6 +232,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/publicaciones" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -248,6 +256,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/sitios" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -280,6 +289,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="JUEGOS" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -302,6 +312,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
                             android:background="@drawable/rectangle_3"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/cSesion" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>

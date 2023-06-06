@@ -15,8 +15,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 
@@ -24,7 +31,13 @@ public class CrearPost extends AppCompatActivity {
     ImageView subir_img;
     Button guardarPost;
     EditText nombrePost, descPost, califPost;
-    TextView nombrePerfil;
+
+    FirebaseUser firebaseUser;
+    FirebaseAuth firebaseAuth;
+
+
+
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -39,19 +52,27 @@ public class CrearPost extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_post);
-        setContentView(R.layout.activity_perfil);
+
+
+        Bundle extras = getIntent().getExtras();
+        String Dato = extras.getString("Dato");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
 
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+
+
         subir_img = findViewById(R.id.subir_img);
         guardarPost = findViewById(R.id.guardarPost);
         nombrePost = findViewById(R.id.NombrePost);
         descPost = findViewById(R.id.DescPost);
         califPost = findViewById(R.id.CalifPost);
-        nombrePerfil = findViewById(R.id.nombresPerfil);
+
+
 
         guardarPost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,13 +80,16 @@ public class CrearPost extends AppCompatActivity {
                 String getTitulo = nombrePost.getText().toString();
                 String getDesc = descPost.getText().toString();
                 String getCalif = califPost.getText().toString();
-                String getNomPerfil = nombrePerfil.getText().toString();
+                String getNomPerfil = Dato;
+
 
                 HashMap<String,Object> hasMap = new HashMap<>();
                 hasMap.put("Titulo",getTitulo);
                 hasMap.put("Descripcion",getDesc);
                 hasMap.put("Calificacion", getCalif);
                 hasMap.put("Creador", getNomPerfil);
+
+
 
                 databaseReference.child("Publicaciones")
                         .child(getTitulo)
@@ -86,4 +110,6 @@ public class CrearPost extends AppCompatActivity {
         });
 
     }
+
+
 }

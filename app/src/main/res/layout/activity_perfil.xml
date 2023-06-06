@@ -79,8 +79,8 @@
                             android:id="@+id/uidPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/uidPerfil"
                             android:textColor="@color/black">
 
@@ -108,8 +108,8 @@
                             android:id="@+id/correoPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/correoPerfil"
                             android:textColor="@color/black">
 
@@ -137,8 +137,8 @@
                             android:id="@+id/nombresPerfil"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/bebas_neue"
                             android:layout_marginStart="5dp"
+                            android:fontFamily="@font/bebas_neue"
                             android:text="@string/nombresPerfil"
                             android:textColor="@color/black">
 

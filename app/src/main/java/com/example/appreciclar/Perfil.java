@@ -57,11 +57,22 @@ public class Perfil extends AppCompatActivity {
         publicaciones = findViewById(R.id.publicaciones);
         CerrarSesion = findViewById(R.id.cSesion);
 
+        String df= nombresPerfil.getText().toString();
+
+        publicaciones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Perfil.this, Publicaciones.class));
+            }
+        });
 
         crearPublicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Perfil.this, CrearPost.class));
+
+                Intent i = new Intent(Perfil.this, CrearPost.class);
+                i.putExtra("Dato",df);
+                startActivity(i);
             }
         });
 

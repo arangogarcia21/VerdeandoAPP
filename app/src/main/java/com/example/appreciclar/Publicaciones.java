@@ -12,6 +12,7 @@ import android.media.session.MediaSessionManager;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 
 public class Publicaciones extends AppCompatActivity {
 
+
     RecyclerView recyclerView;
     ArrayList<DataPublicaciones> PublicacionesArrayList;
     MyAdapterP myAdapterP;
@@ -33,6 +35,7 @@ public class Publicaciones extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_publicaciones);
 
         progressDialog = new ProgressDialog(this);
@@ -56,24 +59,27 @@ public class Publicaciones extends AppCompatActivity {
 
         private void EventChangeListener(){
 
-            db.collection("Publicaciones").orderBy("Creador", Query.Direction.ASCENDING)
+            db.collection("Publicaciones").orderBy("Calificacion", Query.Direction.ASCENDING)
                     .addSnapshotListener(new EventListener<QuerySnapshot>() {
+
                         @Override
                         public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+
                             if (error != null){
 
-                                if(progressDialog.isShowing())
-                                    progressDialog.dismiss();
+
                                 Log.e("Firestore Error",error.getMessage());
                                 return;
                             }
                             for (DocumentChange dc : value.getDocumentChanges()){
+
                                 if (dc.getType()== DocumentChange.Type.ADDED){
                                     PublicacionesArrayList.add(dc.getDocument().toObject(DataPublicaciones.class));
 
                                 }
                                 myAdapterP.notifyDataSetChanged();
                                 if(progressDialog.isShowing())
+
                                     progressDialog.dismiss();
                             }
 

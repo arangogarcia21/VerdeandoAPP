@@ -105,7 +105,7 @@ public class CrearPost extends AppCompatActivity {
                                 Toast.makeText(CrearPost.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
-                startActivity(new Intent(CrearPost.this, Publicaciones.class));
+
             }
         });
 

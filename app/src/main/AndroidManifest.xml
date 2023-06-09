@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppReciclar"
         tools:targetApi="31"
+
         >
+        <meta-data
+            android:name="com.google.firebase.firestore.CONFIG_SYNC_INTERVAL_SECONDS"
+            android:value="60" />
         <activity
             android:name=".CrearPost"
             android:exported="false" />

@@ -1,18 +1,26 @@
 package com.example.appreciclar;
 
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.media.session.MediaSessionManager;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -28,67 +36,59 @@ public class Publicaciones extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<DataPublicaciones> PublicacionesArrayList;
-    MyAdapterP myAdapterP;
-    FirebaseFirestore db;
-    ProgressDialog progressDialog;
+
+    DatabaseReference databaseReference;
+    ValueEventListener eventListener;
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_publicaciones);
 
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("fetching Data...");
-        progressDialog.show();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(Publicaciones.this,1);
+        recyclerView.setLayoutManager(gridLayoutManager);
 
-        db = FirebaseFirestore.getInstance();
-        PublicacionesArrayList = new ArrayList<DataPublicaciones>();
-        myAdapterP = new MyAdapterP(Publicaciones.this,PublicacionesArrayList);
+        AlertDialog.Builder builder = new AlertDialog.Builder(Publicaciones.this);
+        builder.setCancelable(false);
+        builder.setView(R.layout.progress_layout);
+        AlertDialog dialog = builder.create();
+        dialog.show();
 
-        recyclerView.setAdapter(myAdapterP);
+         PublicacionesArrayList = new ArrayList<>();
 
-        EventChangeListener();
+         MyAdapterP myAdapterP = new MyAdapterP(Publicaciones.this,PublicacionesArrayList);
+         recyclerView.setAdapter(myAdapterP);
 
-        }
+         databaseReference = FirebaseDatabase.getInstance().getReference("Publicaciones");
+         dialog.show();
 
-        private void EventChangeListener(){
+         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
+             @Override
+             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                 PublicacionesArrayList.clear();
+                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
+                     DataPublicaciones dataPublicaciones = itemSnapshot.getValue(DataPublicaciones.class);
+                     PublicacionesArrayList.add(dataPublicaciones);
+                 }
+                 myAdapterP.notifyDataSetChanged();
+                 dialog.dismiss();
+             }
 
-            db.collection("Publicaciones").orderBy("Calificacion", Query.Direction.ASCENDING)
-                    .addSnapshotListener(new EventListener<QuerySnapshot>() {
-
-                        @Override
-                        public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-
-                            if (error != null){
-
-
-                                Log.e("Firestore Error",error.getMessage());
-                                return;
-                            }
-                            for (DocumentChange dc : value.getDocumentChanges()){
-
-                                if (dc.getType()== DocumentChange.Type.ADDED){
-                                    PublicacionesArrayList.add(dc.getDocument().toObject(DataPublicaciones.class));
-
-                                }
-                                myAdapterP.notifyDataSetChanged();
-                                if(progressDialog.isShowing())
-
-                                    progressDialog.dismiss();
-                            }
+             @Override
+             public void onCancelled(@NonNull DatabaseError error) {
+                dialog.dismiss();
+             }
+         });
 
 
-                        }
-                    });
-
-
-
-
-        }
+    }
 }

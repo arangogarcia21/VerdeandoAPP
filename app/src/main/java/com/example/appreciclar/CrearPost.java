@@ -31,7 +31,7 @@ public class CrearPost extends AppCompatActivity {
     ImageView subir_img;
     Button guardarPost;
     EditText nombrePost, descPost, califPost;
-
+    TextView nom_usuario;
     FirebaseUser firebaseUser;
     FirebaseAuth firebaseAuth;
 
@@ -53,10 +53,6 @@ public class CrearPost extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_post);
 
-
-        Bundle extras = getIntent().getExtras();
-        String Dato = extras.getString("Dato");
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -65,14 +61,12 @@ public class CrearPost extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
 
-
+        nom_usuario = findViewById(R.id.nom_usuario);
         subir_img = findViewById(R.id.subir_img);
         guardarPost = findViewById(R.id.guardarPost);
         nombrePost = findViewById(R.id.NombrePost);
         descPost = findViewById(R.id.DescPost);
         califPost = findViewById(R.id.CalifPost);
-
-
 
         guardarPost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,7 +74,7 @@ public class CrearPost extends AppCompatActivity {
                 String getTitulo = nombrePost.getText().toString();
                 String getDesc = descPost.getText().toString();
                 String getCalif = califPost.getText().toString();
-                String getNomPerfil = Dato;
+                String getNomPerfil = nom_usuario.getText().toString();
 
 
                 HashMap<String,Object> hasMap = new HashMap<>();

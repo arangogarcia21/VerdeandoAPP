@@ -31,7 +31,7 @@ public class Perfil extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference BASE_DE_DATOS;
 
-    Button misDatosOpcion, crearPublicacion, publicaciones, usuarios, chatOpcion;
+    Button misDatosOpcion, crearPublicacion, publicaciones, sitiosv;
     ImageView foto_perfil;
     TextView uidPerfil, correoPerfil, nombresPerfil;
 
@@ -56,8 +56,16 @@ public class Perfil extends AppCompatActivity {
         crearPublicacion = findViewById(R.id.crearPublicacion);
         publicaciones = findViewById(R.id.publicaciones);
         CerrarSesion = findViewById(R.id.cSesion);
+        sitiosv = findViewById(R.id.sitios);
 
-        String df= nombresPerfil.getText().toString();
+        String df ;
+
+        sitiosv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Perfil.this, sitiosVerdes.class));
+            }
+        });
 
         publicaciones.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,10 +77,8 @@ public class Perfil extends AppCompatActivity {
         crearPublicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(Perfil.this, CrearPost.class));
 
-                Intent i = new Intent(Perfil.this, CrearPost.class);
-                i.putExtra("Dato",df);
-                startActivity(i);
             }
         });
 

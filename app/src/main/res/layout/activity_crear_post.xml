@@ -34,6 +34,13 @@
                 android:textSize="30sp"
                 android:textAlignment="center"
                 android:textColor="@color/verdeando"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="usuario"
+                android:textSize="10sp"
+                android:id="@+id/nom_usuario"
+                android:textColor="@color/verdeando"/>
 
             <ImageView
                 android:layout_width="match_parent"

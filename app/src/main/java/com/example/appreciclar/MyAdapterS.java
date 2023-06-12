@@ -49,7 +49,7 @@ public class MyAdapterS extends RecyclerView.Adapter<MyAdapterS.MyViewHolder> {
                 Double latitud = dataSitiosVerdes.getLatitud();
                 Double longitud = dataSitiosVerdes.getLongitud();
 
-                Intent intent = new Intent(context, Ubicacion.class);
+                Intent intent = new Intent(context, MapsActivity1.class);
                 intent.putExtra("latitud", latitud);
                 intent.putExtra("longitud", longitud);
                 context.startActivity(intent);

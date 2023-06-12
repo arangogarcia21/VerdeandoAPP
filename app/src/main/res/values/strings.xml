@@ -94,5 +94,6 @@
     <string name="DireccionDatoTXT">Dirección: </string>
     <string name="ActualizarDatos">Actualizar Datos</string>
     <string name="ActualizarPass">Cambiar Contraseña</string>
+    <string name="title_activity_maps1">MapsActivity1</string>
 
 </resources>

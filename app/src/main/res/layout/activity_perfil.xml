@@ -285,7 +285,7 @@
                             android:src="@drawable/juegos" />
 
                         <Button
-                            android:id="@+id/Sitios"
+                            android:id="@+id/Sitios1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"

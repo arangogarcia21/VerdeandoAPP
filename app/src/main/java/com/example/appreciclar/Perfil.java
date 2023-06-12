@@ -56,9 +56,9 @@ public class Perfil extends AppCompatActivity {
         crearPublicacion = findViewById(R.id.crearPublicacion);
         publicaciones = findViewById(R.id.publicaciones);
         CerrarSesion = findViewById(R.id.cSesion);
-        sitiosv = findViewById(R.id.sitios);
+        sitiosv = findViewById(R.id.Sitios1);
 
-        String df ;
+
 
         sitiosv.setOnClickListener(new View.OnClickListener() {
             @Override

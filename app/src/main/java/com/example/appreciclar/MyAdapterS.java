@@ -1,13 +1,17 @@
 package com.example.appreciclar;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -36,7 +40,7 @@ public class MyAdapterS extends RecyclerView.Adapter<MyAdapterS.MyViewHolder> {
         holder.Descripcion.setText(dataSitiosVerdes.Descripcion);
         holder.Latitud.setText(dataSitiosVerdes.Latitud);
         holder.Longitud.setText(dataSitiosVerdes.Longitud);
-        holder.Imagen.setText(dataSitiosVerdes.Imagen);
+        Glide.with(context).load(dataSitiosVerdes.Imagen).into(holder.Imagen);
 
     }
 
@@ -46,8 +50,8 @@ public class MyAdapterS extends RecyclerView.Adapter<MyAdapterS.MyViewHolder> {
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView Titulo, Descripcion, Latitud, Longitud, Imagen;
-
+        TextView Titulo, Descripcion, Latitud, Longitud;
+        ImageView Imagen;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             Titulo = itemView.findViewById(R.id.Titulo);

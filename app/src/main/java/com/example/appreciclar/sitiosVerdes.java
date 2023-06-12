@@ -47,7 +47,7 @@ public class sitiosVerdes extends AppCompatActivity {
 
     private void EventChangeListener(){
 
-        db.collection("Sitios").orderBy("Titulo", Query.Direction.ASCENDING)
+        db.collection("Sitios").orderBy("Descripcion", Query.Direction.ASCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {

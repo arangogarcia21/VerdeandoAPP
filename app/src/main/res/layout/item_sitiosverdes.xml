@@ -42,25 +42,10 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
-        <TextView
-            android:id="@+id/latitud"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="descripcion"
-            android:textAlignment="center"
-            android:textColor="@color/lavender"
-            android:textSize="5sp" />
-        <TextView
-            android:id="@+id/longitud"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="descripcion"
-            android:textAlignment="center"
-            android:textColor="@color/lavender"
-            android:textSize="5sp" />
+
 
         <Button
-            android:id="@+id/VerMapa"
+            android:id="@+id/verMapa"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

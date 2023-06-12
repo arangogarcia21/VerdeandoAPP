@@ -1,13 +1,13 @@
 package com.example.appreciclar;
 
 public class DataSitiosVerdes {
-    String Titulo, Imagen, Descripcion, Latitud, Longitud;
-
+    String Titulo, Imagen, Descripcion ;
+    Double Latitud, Longitud;
     public DataSitiosVerdes(){
 
     }
 
-    public DataSitiosVerdes(String titulo, String imagen, String descripcion, String latitud, String longitud) {
+    public DataSitiosVerdes(String titulo, String imagen, String descripcion, Double latitud, Double longitud) {
         Titulo = titulo;
         Imagen = imagen;
         Descripcion = descripcion;
@@ -39,19 +39,19 @@ public class DataSitiosVerdes {
         Descripcion = descripcion;
     }
 
-    public String getLatitud() {
+    public Double getLatitud() {
         return Latitud;
     }
 
-    public void setLatitud(String latitud) {
+    public void setLatitud(Double latitud) {
         Latitud = latitud;
     }
 
-    public String getLongitud() {
+    public Double getLongitud() {
         return Longitud;
     }
 
-    public void setLongitud(String longitud) {
+    public void setLongitud(Double longitud) {
         Longitud = longitud;
     }
 }

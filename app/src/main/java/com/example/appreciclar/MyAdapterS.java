@@ -1,10 +1,12 @@
 package com.example.appreciclar;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,9 +40,21 @@ public class MyAdapterS extends RecyclerView.Adapter<MyAdapterS.MyViewHolder> {
 
         holder.Titulo.setText(dataSitiosVerdes.Titulo);
         holder.Descripcion.setText(dataSitiosVerdes.Descripcion);
-        holder.Latitud.setText(dataSitiosVerdes.Latitud);
-        holder.Longitud.setText(dataSitiosVerdes.Longitud);
+
         Glide.with(context).load(dataSitiosVerdes.Imagen).into(holder.Imagen);
+
+        holder.VerMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Double latitud = dataSitiosVerdes.getLatitud();
+                Double longitud = dataSitiosVerdes.getLongitud();
+
+                Intent intent = new Intent(context, Ubicacion.class);
+                intent.putExtra("latitud", latitud);
+                intent.putExtra("longitud", longitud);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
@@ -50,15 +64,16 @@ public class MyAdapterS extends RecyclerView.Adapter<MyAdapterS.MyViewHolder> {
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView Titulo, Descripcion, Latitud, Longitud;
+        TextView Titulo, Descripcion;
         ImageView Imagen;
+        Button VerMapa;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             Titulo = itemView.findViewById(R.id.Titulo);
             Descripcion = itemView.findViewById(R.id.descripcion);
-            Latitud = itemView.findViewById(R.id.latitud);
-            Longitud = itemView.findViewById(R.id.longitud);
+
             Imagen = itemView.findViewById(R.id.img_item);
+            VerMapa = itemView.findViewById(R.id.verMapa);
         }
     }
 

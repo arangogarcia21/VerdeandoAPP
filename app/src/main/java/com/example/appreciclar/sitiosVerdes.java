@@ -1,11 +1,12 @@
 package com.example.appreciclar;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
+
 import android.os.Bundle;
 import android.util.Log;
 
@@ -21,9 +22,10 @@ import java.util.ArrayList;
 public class sitiosVerdes extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<DataSitiosVerdes> sitiosVerdesArrayList;
+
     MyAdapterS myAdapterS;
     FirebaseFirestore db;
-    ProgressDialog progressDialog;
+
 
 
     @Override
@@ -47,27 +49,27 @@ public class sitiosVerdes extends AppCompatActivity {
 
     private void EventChangeListener(){
 
-        db.collection("Sitios").orderBy("Descripcion", Query.Direction.ASCENDING)
+        db.collection("Sitio")
+                .orderBy("Titulo", Query.Direction.ASCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
-                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-                        if (error != null){
-
-
-                            Log.e("Firestore Error",error.getMessage());
+                    public void onEvent(@NonNull QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                        if (error != null) {
+                            Log.e("Firestore Error", error.getMessage());
                             return;
                         }
-                        for (DocumentChange dc : value.getDocumentChanges()){
 
-                            if (dc.getType()== DocumentChange.Type.ADDED){
+                        sitiosVerdesArrayList.clear();
+
+                        for (DocumentChange dc : value.getDocumentChanges()) {
+                            if (dc.getType() == DocumentChange.Type.ADDED) {
                                 sitiosVerdesArrayList.add(dc.getDocument().toObject(DataSitiosVerdes.class));
-
                             }
-                            myAdapterS.notifyDataSetChanged();
-
                         }
+
+                        myAdapterS.notifyDataSetChanged();
                     }
                 });
-
     }
+
 }

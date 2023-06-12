@@ -257,7 +257,7 @@
                             android:layout_marginStart="5dp"
                             android:background="@drawable/rectangle_3"
                             android:fontFamily="@font/bebas_neue"
-                            android:text="@string/sitios" />
+                            android:text="Mapa" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -290,7 +290,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/rectangle_3"
                             android:fontFamily="@font/bebas_neue"
-                            android:text="JUEGOS" />
+                            android:text="Sitios Verdes" />
 
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
